@@ -32,7 +32,7 @@ anakDari(mary,susan).
 
 ayah(X,Y) :-
     anakDari(Y,X),
-    perempuan(X).
+    laki_laki(X).
 
 ibu(X,Y) :-
     anakDari(Y,X),
@@ -54,7 +54,7 @@ kakek(X,Y) :-
 
 nenek(X,Y) :-
     anakDari(Z,X),
-    laki_laki(X),
+    perempuan(X),
     anakDari(Y,Z).
 
 cucu(X,Y) :-
